@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cybermasters is now collabrated with INV TECHNOLOGIES">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>INV Technologies</title>
+    <!-- Fontawesome.css -->
+    <link rel="stylesheet" href="assets/css/fontawesome-free-5.12.0.min.css">
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="assets/css/bootstrap-4.3.1.min.css">
+    <!-- Default.css -->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive.css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+    <style>
+        body {
+            background-image: url("skyline.jpg");
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Start Header Area -->
+    <div class="header-area">
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-6">
+                        <div class="site-logo">
+                            <a href="index.html"><img src="logo/logo.png" style="height: 60px;"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-lg-none static text-right">
+                        <div class="show-mobile-menu"></div>
+                    </div>
+                    <div class="col-lg-9 text-right d-none d-lg-block">
+                        <nav class="menu-wrapper">
+                            <ul class="main-menu" id="mobile-menu">
+                                <li><a href="../../">HOME</a></li>
+                                <li><a href="../../">SERVICES</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto my-5">
+                <div class="card border-0 shadow rounded-3 my-5">
+                    <div class="card-body p-4 p-sm-5">
+                        <h6 class="card-title text-center mb-3">Login</h6>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <label for="floatingInput">Email address</label>
+                                <input type="email" class="form-control" id="s1">
+                            </div>
+                            <div class="form-floating mb-3">
+                                <label for="floatingPassword">Password</label>
+                                <input type="password" class="form-control" id="s2">
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="button" onclick="login()">
+                                    LOGIN
+                                </button>
+                            </div><br>
+                            <p>** Please contact admin for login credentials</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function login() {
+            var s1 = $("#s1");
+            var s2 = $("#s2");
+            s1.removeClass("is-invalid");
+            s2.removeClass("is-invalid");
+            if (!s1.val() || s1.val() != "demo") {
+                s1.addClass("is-invalid");
+            } else if (!s2.val() || s2.val() != "demo") {
+                s2.addClass("is-invalid");
+            }
+            else {
+                window.location.href = "demo.html";
+            }
+        }
+    </script>
+</body>
+
+</html>
