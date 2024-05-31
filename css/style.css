@@ -660,6 +660,9 @@ h3.w3l-agile:before,h2.w3l-agile:before  {
   .our-team:hover .picture::before {
     height: 100%;
   }
+  .our-team:hover .members-picture::before {
+    height: 100%;
+  }
   
   .our-team .picture::after {
     content: "";
@@ -672,6 +675,29 @@ h3.w3l-agile:before,h2.w3l-agile:before  {
     left: 0;
     z-index: -1;
   }
+  .our-team .members-picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff8800;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .our-team .others-picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #924DBF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
   
   .our-team .picture img {
     width: 100%;
