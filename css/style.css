@@ -189,7 +189,7 @@ h6,
 .roadmap-carousel::before {
   position: absolute;
   content: "";
-  height: 0;
+  height: 100%;
   width: 100%;
   top: 20px;
   left: 0;
@@ -201,7 +201,7 @@ h6,
 }
 
 .roadmap-carousel .roadmap-item .roadmap-point {
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 30px;
   top: 6px;
@@ -742,17 +742,12 @@ h2.w3l-agile:before {
 }
 
 .modal-dialog {
-  width: 80%;
-  min-width: 320px;
+  position: relative;
+  justify-content: center;
 }
 
 .modal-body {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .roadmap-item {
@@ -760,15 +755,25 @@ h2.w3l-agile:before {
   padding: 0px;
 }
 
-.modal-content {
-  width: 80%;
-  min-width: 320px;
+.custom-modal {
+  max-width: 100%;
 }
 
-.custom-modal {
-  max-width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 320px;
+@media screen and (min-width: 768px) {
+  .custom-modal {
+    max-width: 80%;
+  }
+  
 }
+
+.modal-card-img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
