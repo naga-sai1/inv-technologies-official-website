@@ -581,6 +581,7 @@ h2.w3l-agile:before {
   text-align: center;
   overflow: hidden;
   position: relative;
+  height: 500px!important;
 }
 
 .our-team .picture {
@@ -693,7 +694,8 @@ h2.w3l-agile:before {
 
 .our-team .title {
   display: block;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: bold;
   color: #4e5052;
   text-transform: capitalize;
 }
@@ -713,6 +715,17 @@ h2.w3l-agile:before {
   padding: 0;
   margin: 0;
   background-color: #ff8800;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team .social-team {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #924dbf;
   position: absolute;
   bottom: -100px;
   left: 0;
